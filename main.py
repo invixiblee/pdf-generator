@@ -29,7 +29,7 @@ for index, row in df.iterrows():
     for i in range(row['Pages'] - 1):
         pdf.add_page()
 
-        # Line (Starts from 10 instead of 20 to 
+        # Line (starts from 10 instead of 20 to 
         # replace header from master page)
         for y in range(10, 298, 10):
             pdf.line(10, y, 200, y)
